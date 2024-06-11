@@ -1,18 +1,19 @@
-
+let string;
+let letterSelected = "";
+let stringReversed = "";
 
 const reverseString = function(string) {
-
+    for (let i = string.length; i > -1; i--)
+        if (string.length > stringReversed.length) {
+            letterSelected = string.charAt(i);
+            stringReversed += letterSelected;
+        }
+        return stringReversed;
 };
+
+
+reverseString('hello');
+
 
 // Do not edit below this line
 module.exports = reverseString;
-
-
-//GET wordToBeReversed variable
-//GET function accepting string as argument 
-    //convert string to array
-    //reverse array
-    //convert array to string
-    //RETURN new string
-
-//CALL function with wordToBeReversed
