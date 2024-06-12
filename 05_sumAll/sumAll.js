@@ -5,7 +5,11 @@ const sumAll = function(...args) {
     for (i = 0; i <= numberArray.at(1); i++) {
         sum += i;
     }
-    return sum;
+    if (numberArray.every(val => !"" && numberArray[0] > 0)) {
+        return sum;
+    } else {
+        return "ERROR";
+    }
 }
 
 
