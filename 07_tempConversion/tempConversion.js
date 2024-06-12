@@ -10,13 +10,14 @@ const convertToFahrenheit = function(degreesCelsius) {
   let n = num.toFixed(1); //rounds first place after decimal, but converts to string
   let result = Number(n); //convert string back to number
   return result;
-
 };
 
 convertToCelsius(32);
 convertToCelsius(100);
-
-
+convertToCelsius(-100);
+convertToFahrenheit(0);
+convertToFahrenheit(73.2);
+convertToFahrenheit(-10);
 
 //x°C ≘ (x × 9/5 + 32)°F	
 //x°F ≘ (x − 32) × 5/9°C
