@@ -1,15 +1,13 @@
 const palindromes = function (string) {
-    reversedString = string.split("").reverse().join("")
-    if (reversedString === string) {
+    acceptedValues = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    cleanString = string.toLowerCase().split("").filter(item => acceptedValues.includes(item)).join("");
+    reverseString = string.toLowerCase().split("").filter(item => acceptedValues.includes(item)).reverse().join("");
+    if (cleanString === reverseString) {
         return true;
     } else {
         return false;
     }
 };
-
-palindromes('racecar');
-palindromes('racecar!');
-
 
 // Do not edit below this line
 module.exports = palindromes;
