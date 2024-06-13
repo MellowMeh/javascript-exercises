@@ -1,8 +1,13 @@
 const fibonacci = function(input) {
     //convert string inputs to number
     selectedIndex = Number.parseInt(input);
-    return selectedIndex;
 
+    //return error if input is negative
+    if (selectedIndex < 0){
+        return "OOPS";
+    }
+
+    return selectedIndex;
 
 }
 
