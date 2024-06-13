@@ -7,7 +7,12 @@ const fibonacci = function(input) {
         return "OOPS";
     }
 
-    fibonacciArray = [0, 1, 2, 3, 25, 5, 6, 7, 8]
+    //create fibonacci array
+    fibonacciArray = [0, 1, 1]
+    for (i = 3; i <= selectedIndex; i++)
+        fibonacciArray.push((fibonacciArray[i-1]) + (fibonacciArray[i-2]));
+    return fibonacciArray;
+
 
     //return selectedIndex
     return fibonacciArray.at(selectedIndex);
