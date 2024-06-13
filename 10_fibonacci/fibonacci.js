@@ -7,7 +7,11 @@ const fibonacci = function(input) {
         return "OOPS";
     }
 
-    return selectedIndex;
+    fibonacciArray = [0, 1, 2, 3, 25, 5, 6, 7, 8]
+
+    //return selectedIndex
+    return fibonacciArray.at(selectedIndex);
+
 
 }
 
