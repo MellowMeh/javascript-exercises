@@ -11,7 +11,6 @@ const fibonacci = function(input) {
     fibonacciArray = [0, 1, 1]
     for (i = 3; i <= selectedIndex; i++)
         fibonacciArray.push((fibonacciArray[i-1]) + (fibonacciArray[i-2]));
-    return fibonacciArray;
 
 
     //return selectedIndex
